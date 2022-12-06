@@ -1,0 +1,104 @@
+Reinforcement
+1.  
+def is_multiple(n,m):
+	return True if m%n==0 else return False
+
+2. 
+def is_even(k):
+	return True if (k&1) == 0 else return False
+3. 
+def minmax(data):
+	list = []
+	min = max = list[0]
+	for value in data:
+		if value < min: min = value
+		if value > max: max = value
+	return(min, max)
+4. 
+def positiveintiger(n):
+	add = 0
+	for values in range(n): 
+		if n%0 == 0: add += values*values
+	return add 
+
+5. 
+def positiveintiger(n):
+	return sum(x*x for x in range(1, n): if x%2==0)
+	
+6&7. 
+def oddintiger(n):
+	return sum(x*x for x in range(1, n): if x%2==1)
+8. 
+
+9. range(50,90,10)
+10.range(8,-10,-2)
+11. newlist = [2*x for i in range(9)]
+
+Creativity
+
+13. 
+def reverseList(list):
+	newlist = [] 
+	length = len(list)
+	for value in range(list):
+		newlist[length-1-value]=value
+	return newlist
+14. 	
+def oddlist(array):
+	for i in array:
+		for x in array:
+			if (i*x) % == 1: return(i, x)
+15. 
+def distinctarray(array):
+	newset = {}
+	for i in array:
+		if i not in newset: 
+			newset.append(i)
+		else:
+			return False
+
+16. The formal parameter is an alias for the actual parameter, the body of the function may interact with the object in ways that changes its states. (page 25)
+the new values that are stored in the list are immutable but can be changed in the list since the list itself can be changed.
+
+17.  
+It does not work to change the values in "data", since val is a formal parameter which acts as an alias to the actual parameter. You would need to replace the values
+in the list "data" to return a list with new values. 
+
+18. 
+def lonlist(int):
+	newlist = [x*(x+1) for x in range(int)]
+	return newlist
+19. 
+def alphabetList():
+	newList = char(i) for i in range(ord("a"), ord("a")+26)
+
+20. 
+
+	
+
+	
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

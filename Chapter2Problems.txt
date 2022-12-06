@@ -1,0 +1,236 @@
+Reinforcement
+1. a. heart monitor b. motion sensing monitor for elderly c. 
+2. Amazon AWS which manages many servers and hosts websites.
+3. file management. Creating a file, writing to the file, editing, saving, closing
+4. Class Flower:
+	def __init__(self, name, petals, price):
+		
+		#calling every function
+		self._name = str(name)
+		self.set_petals(self.petals)
+		self.set_price(self.price)
+
+		def set_petals(self, petals):
+			try:
+				self._petals = int(petals,10)
+			except ValueError:
+				print("Petals should be int")
+		def set_price(self, price):
+			try:
+				self._price = float(price)
+			except ValueError:
+				print("Price should be a float type")
+
+5. 
+	def charge(self, price):
+		try:
+			price = int(price)
+		else valueError:
+			print("Value Error")
+			return False 
+
+		if price+self._balance > self._limit:
+			return False
+		self._balance+=price
+		return True
+	
+	def make_payment(self,amount):
+		try:
+			amount = int(amount)
+		except:
+			print("Amount is not an integer")
+			return False
+		
+		self._balance-=amount
+		return True
+	
+6. 
+
+	def make_payment(self,amount):
+		try:
+			amount = int(amount)
+			if amount < 0:
+				raise valueError("Cannot make negative Payments")
+			
+		except:
+			print("Amount is not an intiger")
+			return False
+		
+		self._balance-=amount
+		return True
+
+7. 
+
+Class CreditCardnonZero(CreditCard):
+	def __init__(self, customer, bank, acnt, limit, balance):
+	
+	super().__init__(customer, bank, actn, limit)
+	self._balance = balance
+
+8. 
+#changing the first loop so that its range is bigger than 17 -> 200
+for val in range(1,200)
+	wallet[0].charge(val)
+	wallet[1].charge(2*val)
+	wallet[3].charge(3*val)
+
+credit card 2 would reach its limit of 3500 fastest
+	
+9. 
+	
+def __sub__(self,other):
+	if len(self) != len(other)
+		raise ValueErroe("Dimmensions dont match")
+	u = Vector(len(self))
+
+	for i in range(len(self)):
+		u[i] = self[i]-other[j]
+	return u 
+
+10. 
+
+def __neg__(self):
+	u = Vector(len(self))
+
+	for i in range(len(self):
+		u[i] = -self[i]
+
+	return u
+
+
+11. 
+
+If the goal is to add lists then we can create a new method such that 
+
+def addlist(self,other):
+	return self+other
+This would be used as a back up to the vector addition from def __add__
+
+
+12. 
+
+def __mul__(self,factor):
+	u = Vector(len(self))
+	for i in range(len(self)):
+		u[i] = self[i]*factor
+	return u 
+ 
+13. 
+
+def __amul__(self,value):
+	return (value*self)
+
+14. 
+
+def __mul__(self,factor):
+	if type(other)==int or type(other) == float:
+		u = Vector(len(self))
+		for i in range(len(self)):
+			u[i] = self[i]*factor
+		return u 
+
+
+
+16. 
+
+		
+(0,5,1) -> (5-0+1-1)/1 = 4
+(10,40,5) -> (40-10+5-1)/5=6
+(10,30,2) -> (30-10+2-1)/2=10
+
+The reason max is used is because we want to take the number that is positive when iterating 
+through a list. 
+Also (+ step - 1) this step is included to account for the fact that the indice starts at 0,
+but the -1 and the floor devision ensures that no extra step is added. 
+
+17. 
+
+			object 
+			   |
+			   |
+		/     /      \     
+	goat 	    pig		horse
+				   | 		\
+				  Racer 	equestrian 
+
+
+Goat 
+-------
+instance varriables
+_tail
+
+Methods
+-------
+milk()
+jump()
+
+
+
+18. #unfinished
+
+Class FibonacciProgression(Progression):
+	def __init__(self,first=2,second=2):
+
+
+		super().__init__(first)
+		self._prev = second-first
+
+	def _advance(self):
+		self._prev,self._current = self._current, self._pre + self._current
+
+		
+
+Creativity:
+
+24. 
+
+eBooks -> getprice(), gettitle(), getauthor(), pages(), booksowned()
+
+pages -> pagenumber(), bookmarks(), displaypage(), nextpage()
+
+store(ebooks) -> getprice(), getbooktitle(), getauthor(), getsummary()
+
+
+
+
+25. 
+def __mul__(self, other):
+	if not isinstance(other, (int,float,list): # multiply by a number
+		raise ValueError("not a number or a list")
+	if isinstance(other,(in,float):
+		u = Vector(len(self))
+		for i in range(len(self):
+			u[i] = self[i]*other
+		return u
+	elif len(self) != len(other):
+		raise ValueError("Lists are not the same length)
+	else: #dot product
+		if len(other)!=len(self):
+			raise ValueError("Vectors are not the same length")
+		sum=0
+	
+		for i in range(len(self)):
+			sum += self[i]*other[i]
+		return sum
+
+26. 
+
+class ReverseSequenceIterator():
+	def __init__(self,sequence):
+		copyseq = seep.copy((list(sequence))
+		self._seq = sequence
+		self._k = len(sequence)
+
+	def __next__(self):
+		self._k -= 1
+		if self._k > 0:
+			return(self._seq[self._k])
+		else:
+			raise StopIteration()
+
+	def __iter__(self):
+		return self			
+			
+			
+			
+
